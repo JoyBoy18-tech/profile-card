@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Tables</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 13px;
+      margin: 40px 60px;
+      color: #000;
+      background: #fff;
+    }
+ 
+    .section {
+      margin-bottom: 32px;
+    }
+ 
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+ 
+    .section-heading .num {
+      font-weight: bold;
+      min-width: 28px;
+    }
+ 
+    .section-heading .title {
+      font-weight: bold;
+    }
+ 
+    table {
+      border-collapse: collapse;
+      margin-left: 40px;
+    }
+ 
+    th, td {
+      border: 1px solid #000;
+      padding: 5px 10px;
+      text-align: left;
+      vertical-align: top;
+      min-width: 80px;
+    }
+ 
+    th {
+      font-weight: bold;
+      background-color: #fff;
+    }
+ 
+    td.empty {
+      min-width: 80px;
+    }
+ 
+    /* For the BREAK / LUNCH vertical text cells */
+    td.vertical-text {
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bold;
+      padding: 6px 4px;
+      min-width: 0;
+      width: 18px;
+      letter-spacing: 1px;
+    }
+ 
+    td.bold-cell {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- iii. My First Table -->
+  <div class="section">
+    <div class="section-heading">
+      <span class="num">iii.</span>
+      <span class="title">My First Table</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SCS101</td>
+          <td>SCS104</td>
+          <td>SCS105</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS104</td>
+          <td class="empty"></td>
+          <td>SCS105</td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS102</td>
+          <td>SCS102</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <!-- iv. My Second Table -->
+  <div class="section">
+    <div class="section-heading">
+      <span class="num">iv.</span>
+      <span class="title">My Second Table</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SCS101</td>
+          <td>SCS104</td>
+          <td>SCS105</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS104</td>
+          <td class="empty"></td>
+          <td>SCS105</td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS102</td>
+          <td>SCS102</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <!-- v. My Third Table -->
+  <div class="section">
+    <div class="section-heading">
+      <span class="num">v.</span>
+      <span class="title">My Third Table</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SCS101</td>
+          <td>SCS104</td>
+          <td>SCS105</td>
+          <td><strong>i. Eat</strong></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS104</td>
+          <td><strong>ii. Sleep</strong></td>
+          <td>SCS105</td>
+        </tr>
+        <tr>
+          <td class="empty"></td>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td>SCS101</td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>SCS102</td>
+          <td>SCS102</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+  <!-- vi. My Fourth Table -->
+  <div class="section">
+    <div class="section-heading">
+      <span class="num">vi.</span>
+      <span class="title">My Forth Table</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th></th>
+          <th>Wednesday</th>
+          <th></th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SCS101</td>
+          <td>SCS104</td>
+          <td rowspan="2" class="vertical-text">BREAK</td>
+          <td>SCS105</td>
+          <td rowspan="2" class="vertical-text">LUNCH</td>
+          <td class="bold-cell">SCS102</td>
+          <td class="empty"></td>
+        </tr>
+        <tr>
+          <td class="bold-cell">SCS111</td>
+          <td class="empty"></td>
+          <td>SCS104</td>
+          <td class="empty"></td>
+          <td>SCS105</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+</body>
+</html>
